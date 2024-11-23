@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+  <div class="form-container">
+    <h2>Upload File</h2>
+    <form action="upload" method="POST" class="form">
+      <div class="input-group">
+        <label for="path">File Path</label>
+        <input type="text" id="path" name="path" required>
+      </div>
+      <div class="input-group">
+        <label for="type">File Type</label>
+        <select id="type" name="type" required>
+            <option value="torrent" selected>Torrent</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Upload</button>
+    </form>
+  </div>
+<%- include('partials/footer') %>
